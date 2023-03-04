@@ -74,7 +74,6 @@ class Models {
         .find(filter)
         .limit(limit)
         .skip(skip)
-        .populate("category")
         .sort({ createdAt: -1 });
 
       // if no data found
