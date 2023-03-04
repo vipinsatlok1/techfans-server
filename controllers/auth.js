@@ -25,7 +25,7 @@ class Auth {
           maxAge: 365 * 24 * 60 * 60 * 1000,
           httpOnly: true,
         })
-        .send(user);
+        .send(user, token);
     } catch (err) {
       next(err);
     }
@@ -54,7 +54,7 @@ class Auth {
           maxAge: 365 * 24 * 60 * 60 * 1000,
           httpOnly: true,
         })
-        .send(user);
+        .send(user, token);
     } catch (err) {
       next(err);
     }
